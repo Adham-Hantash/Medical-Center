@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
+body {
+  font-family: "Fira Sans", sans-serif;
+}
+
+.navbar {
+  position: relative;
+}
+
+.container {
+  overflow: hidden;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+/* start navbar */
+
+ul {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+
+a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.list .home-button {
+  color: #469fe4;
+  border-bottom: 2px solid #469fe4;
+  padding: 0 10px 30px;
+}
+
+
+.navbar .logo {
+  float: left;
+  width: 20%;
+  padding: 10px;
+}
+
+.navbar .logo img {
+  width: 100%;
+}
+
+.navbar .list li {
+  float: left;
+  padding: 10px;
+}
+
+li a:hover{
+    color:#469fe4;
+}
+
+.list i:hover{
+    color:#469fe4;
+}
+
+
+.navbar .list i {
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+
+.navbar .list .fa-bars {
+  display: none;
+}
+
+.navbar .list {
+  float: right;
+  padding: 10px 50px;
+}
+
+/* end navbar */
+
+/* start header */
+.header {
+  background-image: url("../imgs/medic-1.jpg");
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.overlay {
+  background-color: #469fe4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+
+.header .header-content {
+  width: 100%;
+  position: absolute;
+  top: 40%;
+  color: #fff;
+  text-align: center;
+}
+
+.header h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 60px;
+}
+
+.header p {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.header-content .buttons {
+  padding: 30px;
+}
+.header-content .buttons a{
+    transition: background-color 1s;
+}
+
+
+.header-content .buttons .learnmore-button:hover{
+    background-color:#469fe4;
+}
+
+.header-content .buttons .contact-button:hover{
+    background-color:#303030;
+}
+
+.header-content .buttons .learnmore-button {
+  color: black;
+  border: 1px solid transparent;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 10px;
+}
+
+.header-content .buttons .contact-button {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px 20px;
+  border-radius: 5px;
+  background-color: transparent;
+}
+/* end-header */
+
+/* start who we are section */
+
+.doctor-img,.description {
+  width: 50%;
+  float: left;
+}
+
+.doctor-img img {
+  width: 100%;
+}
+
+.description {
+    float: right;
+    width: 50%;
+    margin-top: 150px;
+}
+
+.description h2 {
+  font-size: 32px;
+  font-weight: 400;
+  color: #303030;
+
+}
+
+.description .mainpar {
+  font-size: 15px;
+  color: #686868;
+  padding: 20px 0;
+}
+
+
+.description li{
+padding: 20px 0;
+}
+
+.description li p{
+  color: #686868;
+  margin-top: 14px;
+  margin-left: 63px;
+}
+
+.description li i {
+  float: left;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border: 1px solid #469fe4;
+  border-radius: 100%;
+  font-size: 20px;
+  background-color: #469fe4;
+  text-align: center;
+  color: #fff;
+}
+
+/*  end who are we section  */
+
+/* start why choose us section */
+
+.why-choose-us {
+  margin-top: 50px;
+  padding: 0 10%;
+}
+
+.why-choose-us h2 {
+  padding: 20px;
+  text-align: center;
+  color: #303030;
+}
+
+.why-choose-us .mainpara {
+  padding-bottom: 50px;
+  text-align: center;
+  color: #686868;
+}
+
+.why-choose-us .chooseUs {
+  overflow: hidden;
+}
+
+.why-choose-us .choices-list {
+  float: left;
+  width: 33.33%;
+  margin: auto;
+}
+
+.why-choose-us .choices-list .choices-icons {
+  float: left;
+  width: 10%;
+  font-size: 20px;
+  color: #686868;
+}
+
+.why-choose-us .choices-list .desc {
+  float: left;
+  width: 80%;
+  padding-bottom: 50px;
+}
+
+.why-choose-us .choices-list h3 {
+  color: #303030;
+  padding-bottom: 10px;
+  font-size: 17px;
+}
+
+.why-choose-us .choices-list p {
+  font-size: 14px;
+  color: #686868;
+}
+
+/* end why choose us section */
+
+/* start footer */
+
+.footer {
+  background-color: #3c5b73;
+  padding: 10px 10%;
+  overflow: hidden;
+}
+
+.footer .copy-rights p {
+  float: left;
+  font-size: 13px;
+  color: #d4dbe0;
+  text-align: center;
+  line-height: 40px;
+}
+
+.footer .links li i {
+  float: right;
+  width: fit-content;
+  margin-right: 20px;
+  color: #d4dbe0;
+  font-size: 15px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  background-color: #00000014;
+}
